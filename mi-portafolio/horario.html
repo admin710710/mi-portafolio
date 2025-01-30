@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Horarios de Asignaturas</title> 
+    <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="estilohorario.css"> 
+</head>
+<body>
+    
+    
+    <div class="contenedor"> <!-- Contenedor principal -->
+        
+        <div class="izquierdo"> <!-- Sección izquierda que contiene la tabla de horarios -->
+            <table> <!-- Inicia la tabla de horarios -->
+                <thead> <!-- Define el encabezado de la tabla -->
+                    <tr class="tabla2"> <!-- Fila del encabezado de los días de la semana -->
+                        <th><p>LUNES</p></th>
+                        <th><p>MARTES</p></th>
+                        <th><p>MIERCOLES</p></th>
+                        <th><p>JUEVES</p></th>
+                        <th><p>VIERNES</p></th>
+                    </tr>
+                </thead>
+                <tbody> <!-- Cuerpo de la tabla con las filas de las asignaturas -->
+                    <tr> <!-- Primera fila de horarios y con meterle el margen que quiera, en la primera fila, ya se modifican todos -->
+                        <td class="margin" style="background-color: antiquewhite;"><p>FOL</p></td>
+                        <td class="margin" rowspan="2" style="background-color: darkcyan;"><P>ENTORNOS DE DESAROLLO</P></td> <!-- Asignatura con rowspan de 2 -->
+                        <td class="margin" rowspan="2" style="background-color: aqua;"><p>SISTEMAS</p></td> 
+                        <td class="margin" rowspan="2" style="background-color: gray;"><p>PRGRAMACION</p></td> 
+                        <td  rowspan="2" style="background-color: gray;"><p>PRGRAMACION</p></td>
+                    </tr>
+                    <tr> <!-- Segunda fila de horarios -->
+                        <td class="margin" id="table2" style="background-color: blueviolet;"><p>LENGUAJES DE MARCAS</p></td> 
+                    </tr>
+                    <tr> <!-- Tercera fila de horarios -->
+                        <td rowspan="2" class="margin" style="background-color: gray;"><p>PRGRAMACION</p></td> 
+                        <td rowspan="2" style="background-color: orange;"><p>DE DATOS</p></td> 
+                        <td rowspan="2" style="background-color: darkcyan;"><p>ENTORNOS DE DESAROLLO</p></td> 
+                        <td rowspan="2" style="background-color: antiquewhite;"><p>FOL</p></td> 
+                        <td rowspan="2" style="background-color: darkcyan;"><p>ENTORNOS DE DESAROLLO</p></td> 
+                    </tr>
+                    <tr> <!-- Cuarta fila, vacía -->
+                    </tr>
+                    <tr> <!-- Quinta fila de horarios -->
+                        <td rowspan="2" class="margin" style="background-color: aqua;"><p>SISTEMAS</p></td> 
+                        <td rowspan="2" style="background-color: aqua;"><p>SISTEMAS</p></td> 
+                        <td rowspan="2" style="background-color: orange;"><p>BASE DE DATOS</p></td>
+                        <td rowspan="2" style="background-color: darkcyan;"><p>ENTORNOS DE DESAROLLO</p></td> 
+                        <td rowspan="2" style="background-color: blueviolet;"><p>LENGUAJE DE MARCAS</p></td> 
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="div2"> <!-- Sección derecha que tengo asignada en el css -->
+            <table class="table2"> <!-- Inicia la tabla con colores y asignaturas -->
+                <tr> <!-- Fila de encabezado para la tabla de colores -->
+                    <th>COLOR</th> <!-- Encabezado de columna para los colores -->
+                    <th>ASIGNATURA</th> <!-- Encabezado de columna para las asignaturas -->
+                </tr>
+                <tr> <!-- Fila  -->
+                    <td class="circulo" style="background-color: aqua;"></td> <!-- Círculo de color aqua -->
+                    <td>SISTEMAS</td> <!-- Asignatura de sistemas -->
+                </tr>
+                <tr> <!-- Fila  -->
+                    <td class="circulo" style="background-color: antiquewhite;"></td> <!-- Círculo de color antiquewhite -->
+                    <td>FOL</td> <!-- Asignatura-->
+                </tr>
+                <tr> <!-- Fila  -->
+                    <td class="circulo" style="background-color: blueviolet;"></td> <!-- Círculo de color blueviolet -->
+                    <td>LENGUAJE DE MARCAS</td> <!-- Asignatura -->
+                </tr>
+                <tr> <!-- -->
+                    <td class="circulo" style="background-color: gray;"></td> <!-- Círculo de color gray -->
+                    <td>PROGRAMACION</td> <!-- Asignatura-->
+                </tr>
+                <tr> <!-- Fila -->
+                    <td class="circulo" style="background-color: darkcyan;"></td> <!-- Círculo de color darkcyan -->
+                    <td>ENTORNOS DE DESAROLLO</td> <!-- Asignatura -->
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

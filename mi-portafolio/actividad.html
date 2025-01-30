@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacer 3 divs con 6 etquetas en cada div</title>
+    <style> /*defino el estilo de mi pagina web*/
+        div {  /* aqui le estoy diciendo que me asigne en todos los divs, el estilo que he asignado entre las llaves, esto tambien podria hacerlo mas dinamicamente con el css, o si quisiese poner cada una distinta, usaria el css con un div class="primer_div", luego en el css pondria .primer_div y y lo que este entre las llaves en esa clase creada, sera mi diseño de ese div*/
+            border: 5px solid #000; /* aqui estoy asignando el borde de 5 pixeles, cada pixel de mas seria mas grande el borde, y he elegido el color negro como puidera haber puesto otro color, para ello he conusltado en una pagina ded google cual seria la enumeracion de dicho color, cada color tiene distinta enumeracion*/
+            padding: 100px; /* es el espacio entre el borde y la letra*/
+            margin: 20px; /* este es el margen entre los los divs, en la pagina se pueden apreciar ya que le he asignado color y espacio.*/
+        }
+    </style>
+</head>
+<body> <!--los div estaran dentro del cuerpo de la pagina-->
+    <h2 id="seccion1">IFP</h2>
+    <p>LUGAR IDEAL PARA ESTUDIAR</p>
+    <div style="background-color: bisque; border: solid #000 20px; padding: 100px; margin-right: 1000px;"> <!--Abrimos el primer div, y con el style podemos asignar el propio estilo que queremos de este div sin hacer caso al div"general" de arriba-->
+        <h1>Este es el Primer Divvv</h1> <!--este es el titulo principal, es el mas importante de la pagina-->
+        <p>Este es un párrafo en el primer div.</p><!--con la p poneros parrafo-->
+        <ul> <!--Aqui le estoy poniendo viñetas a mis listas-->
+            <li>Aprendizaje</li> <!--La etiqueta con la que hacemos las listas, dentro puedo poner lo que quiera-->
+            <li>Formacion</li>
+            <li>Enseñanza</li>
+        </ul> <!--Cerramos la etiqueta porque en este div ya no voy a utilizar mas listas ni mas viñetas-->
+        <a href="https://learn.ifp.es/">Enlace ifp</a> <!--Con el href podemos hacer enlaces en los cuales si clikamos nos llevan a paginas que queramos-->
+        <img src="https://www.ifp.es/sites/ifp.es/files/styles/img_style_10_9_480/public/images/Sants.png?itok=WWUi9uHO" width="150" height="150" alt="Imagen de ifp"> <!--He utilizado la etiqueta de imagen, esta no se cierra, he copiado la direccion de imagen de una foto de google y con el weidht=anchura y con el height=altura, le he asignado el tamaño, el alt sirve por si falla la imagen, pues te pondria ese texto para saber la ubicacion de la imagen-->
+        <button>Un botón</button> <!--Con el botton se pueden hacer hipervinvulos con otras paginas htmls creadas en una misma carpeta, no lo he hecho porque aun no lo hemos dado pero los hipervinculos con otras paginas lo pondriamos arriba con el href, pero esta actividad creo que no pides hacer eso-->
+    </div> <!--Cierro div-->
+
+    <div style="background-color: greenyellow; border:  #888 20px;  margin-left: 500px; margin-right: 500px;"> <!--Abrimos el segundo div y le aplico el estilo que quiera-->
+        <h2>Asignaturas </h2> <!--El titulo-->
+        <div style="background-color: greenyellow; border:  #888 20px; "><img src="https://www.ifp.es/sites/ifp.es/files/styles/img_style_10_9_480/public/images/Sants.png?itok=WWUi9uHO" width="250" height="250" alt="Imagen de ifp"></div> <!--Aqui le he asignado un div dentro del div, el div principal se hace mas grande automaticamnete cada vez que metas mas contenido-->
+        <p>El primer parrafo de este div</p>
+        <ol> <!--Como las viñetas, pero esta vez con numeros y letras, para las listas-->
+            <li>Lenguaje de marcas</li> <!--Etiqueta para hacer listas-->
+            <li>Programacion</li>
+            <li>Entornos de desarollo</li>
+            <li>Sistemas</li>
+            <li>Base de datos</li>
+        </ol> <!--Cerramos etiqueta de las enumaraciones ded listas-->
+        <blockquote>El bloque (blockquote)</blockquote> <!--Estoy citando en bloque, esto para reslatra cualquier texto que pongamos-->
+        <input type="text" placeholder="Escriba su localidad..."> <!--El input es el campo de entrada, le decimos tipo texto, porque tambien puede ser de numeros unicamente, el "placeholder", muestra un texto de referncia, para lo que deberas poner en ese apartadop de texto-->
+        <span>/ESPAÑA</span> <!--El span, sirve para crear algo en especifico sin crear un bloque-->
+    </div> <!--Cierro div-->
+
+    <div>
+        <h3>Título del Tercer Div</h3> <!--El titulo-->
+        <p>Este es el último párrafo en el tercer div.</p> <!--con la p poneros parrafo-->
+        <dl> <!--La uso para emparejar un texto o termino, con su definicion u otra utilidad que tengamos en mente-->
+            <dt>Bosque</dt> <!--Este seria el termino por llamarlo de alguna manera-->
+            <dd>Conjunto de arboles</dd> <!--Esta seria la definicion del termino por decirlo de alguna manera tambien, esto seria un ejemplo entre tantas posibilidades que podemos hacer-->
+            <dt>Centro de estudios</dt><!--Este seria el segundo termino a definir-->
+            <dd>Conjunto de aulas</dd>
+        </dl> <!--Cerramos etiqueta -->
+        <strong>Lenguaje</strong> <!--Esto basicamente seria un texto en negrita, aunque en css con las clases podriamos elegir el color del texto, y con el style tambien-->
+        <span>de</span>
+        <em>marcas</em> <!--Texto en cursiva-->
+    </div> <!--Cierro div-->
+    <a href="#seccion1">VOLVER A LEER</a>
+</body> <!--cierro body-->
+</html>
